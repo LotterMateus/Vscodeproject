@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 70px;
+            margin: 2rem;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            align-items: center;
+            border-radius: 15%;
+            margin: 2rem;
+            border: 3px solid black;
+
+
+        }
+
+        .rosa {
+            padding: 1rem;
+            border: 2px solid black;
+            background-color: rgb(241, 144, 233);
+            border-radius: 15%;
+            margin: 1rem;
+            animation: zoomIn 0.5s ease-in-out;
+            cursor: pointer;
+            transform: scale(0.5s);
+            transition: opacity 0.5s, opacity 0.5s;
+        }
+        .rosa:hover{
+            transform: scale(1.2);
+            opacity: 1;
+        }
+        .azul {
+            padding: 1rem;
+            border: 2px solid black;
+            background-color: rgb(50, 146, 255);
+            border-radius: 15%;
+            margin: 1rem;
+            animation: zoomIn 0.5s ease-in-out;
+            cursor: pointer;
+            transform: scale(0.5s);
+            transition: opacity 0.5s, opacity 0.5s;
+        }
+        .azul:hover{
+            transform: scale(1.2);
+            opacity: 1;
+        }
+        .amarelo {
+            padding: 1rem;
+            border: 2px solid black;
+            background-color: rgb(250, 247, 50);
+            border-radius: 15%;
+            margin: 1rem;
+            animation: zoomIn 0.5s ease-in-out;
+            cursor: pointer;
+            transform: scale(0.5s);
+            transition: opacity 0.5s, opacity 0.5s;
+        }
+        .amarelo:hover{
+            transform: scale(1.2);
+            opacity: 1;
+        }
+        .laranja{
+            padding: 1rem;
+            border: 2px solid black;
+            background-color: rgb(250, 127, 26);
+            border-radius: 15%;
+            margin: 1rem;
+            animation: zoomIn 0.5s ease-in-out;
+            cursor: pointer;
+            transform: scale(0.5s);
+            transition: opacity 0.5s, opacity 0.5s;
+        }
+        .laranja:hover{
+            transform: scale(1.2);
+            opacity: 1;
+        }
+
+        p {
+            text-align: center;
+            justify-content: center;
+            font-size: 33px;
+        }
+
+        .primeira {
+            display: flex;
+            margin: 5rem;
+            justify-content: center;
+            border-radius: 15%;
+        }
+
+        .segunda {
+            display: flex;
+            margin: 5rem;
+            justify-content: center;
+            border-radius: 15%;
+
+        }
+
+        body {
+            background-color: gray;
+        }
+        @keyframes
+         fadeIn{
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+         }
+            @keyframes zoomIn {
+                from{
+                    transform: scale(0.5);
+                    opacity: 0;
+                }
+                to {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <h1>
+        POKEMONS
+    </h1>
+    <div class="primeira" >
+        <div class="rosa" id="rosa" onclick="mostrarAlert()">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUMxXZcs8ZJ31COLoes7NNheEX_S60CFabRw&s">
+            <p>
+                Jigglypuff
+            </p>
+        </div>
+        <div class="azul" id="azul" onclick="mostrarAlert2()">
+            <img
+                src="https://static.wikia.nocookie.net/pokepedia/images/9/90/Totodile-1-.jpg/revision/latest?cb=20111219184002&path-prefix=pt">
+            <p>Ttodile</p>
+        </div>
+    </div>
+
+
+    <div class="segunda">
+        <div class="amarelo" id="amarelo"  onclick="mostrarAlert3()"> 
+        <img src="https://i.pinimg.com/originals/87/67/4b/87674b1aed73fc448bd021dbd96fb2a9.png">
+        <p>Pikachu</p>
+    </div>
+    <div class="laranja" id="laranja"  onclick="mostrarAlert4()">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxnHcsy6KiGjDw31evpwg1fqekzsOw9bg6LA&s">
+        <p>Charizard</p>
+    </div>
+    </div>
+</body>
+<script>
+function mostrarAlert()
+{
+    alert("Jigglypuff, conhecido no Japão como Purin (プリン), é uma espécie de Pokémon da franquia Pokémon que pertence a Nintendo e Game Freak.");
+}
+    
+function mostrarAlert2()
+{
+    alert("Totodile (ワニノコ, Waninoko ) é o nome de uma das espécies fictícias de personagens do tipo água da série Pokémon . É um dos Pokémon iniciais na região de Johto, junto com Chikorita e Cyndaquil .");
+}
+function mostrarAlert3()
+{
+    alert("Pikachu [ a ] ​​​​é uma espécie de Pokémon da franquia de mídia Pokémon desenvolvida pela Nintendo e Game Freak , e é o mascote da franquia. Pikachu foi introduzido pela primeira vez nos videogames Pokémon Red e Blue .");
+}
+
+function mostrarAlert4()
+{
+    alert("Charizard (リザードン, Lizardon ) , na série de jogos Pokémon , é a evolução do Charmeleon que atinge o nível 36. Nesta forma, seu corpo é duas vezes maior que sua forma Charmeleon. ");
+
+}
+
+</script>
+
+</html>
